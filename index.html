@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Anh Nguyen - Software Developer Portfolio - Fairfax, VA</title>
+        <meta name="description" content="Anh Nguyen is a software developer. Check out my portfolio!">
+        <meta name="author" content="Anh Nguyen">
+        <meta name="keywords" content="Anh Nguyen, Fairfax, Virginia, computer science, software engineering, software developer, Fairfax, Virginia">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="images/site.webmanifest">
+    </head>
+    <body>
+        <!-- START DETAIL -->
+        
+        <div id="detail" class="detail-background"></div>
+        
+        <!-- END DETAIL-->
+        <!-- START NAV -->
+       
+        <nav id="sidenav" class="nav">
+            <img class="image-profile image-fluid" src="images/AnhNguyen.jpeg" alt="Anh Nguyen profile picture">
+            <ul class="nav-list">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+            </ul>
+        </nav>
+        
+        <!-- END NAV -->
+        <!-- START ABOUT -->
+        <div class="main">
+            <section id="about" class="about-section">
+                <h1>Hi, my name is Anh Nguyen.</h1>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/anguyense/" class="fa fa-linkedin" target="_blank"> LinkedIn</a>
+                    <a href="https://www.facebook.com/PapaSh33p/" class="fa fa-facebook" target="_blank"> Facebook</a>
+                    <a href="https://github.com/anguyense" class="fa fa-github" target="_blank"> GitHub</a>
+                    <a href="mailto:anguyen.se@gmail.com" class="fa fa-at" > Email</a>
+                    <a href="tel:703-944-0629" class="fa fa-mobile"> Phone</a>
+                </div>
+                <h2>About Me</h2>
+                <p>I am a software developer living in Fairfax, Virginia. I want to <strong>make people smile with code</strong>.<br> Although I can be professional, I want to be personable too. Besides coding, I have a bunch of other hobbies. I like pop music. I love spicy food. I like to watch movies and shows. I play video games. I like to go out on adventures.</p>
+    
+                <h2>People First</h2>
+                <p>I can use most software easily, but everybody is different. Some have disabilities that make using software more difficult. Others may struggle due to unintentional oversight or confusing and frustrating design. Everyone should be able to enjoy software as easily as possible.<br>With that in mind, I strive to <strong>make software accessible and inclusive to everyone</strong>.</p>
+                
+                <h2>Get in Touch</h2>
+                <p>Interested in hiring me, working together, or seeking advice? Got recommendations for movies, music, food, or travel spots? Want to vent about life or insane gas prices?<br>We can talk about anything at any time!</p>
+                <!-- TODO: MAKE AND LINK CONTACT FORM -->
+                
+                <!-- <a href="#" id="modal-link">We can talk about anything at any time!</a> !-->
+
+                <div id="my-modal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>Let's Talk</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>I want to hear from you! Write below what you'd like to say to me.</p>
+                            <form id="contact-form" action="#">
+                            <!-- TODO: Change action to PHP form (mailto:anguyen.se@gmail.com) -->
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" class="form-element" maxlength="80" pattern="([A-zÀ-ž\s]){2,}" title="Requires at least 2 characters." name="name" required="required" placeholder="Lil Nas X">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Your Email</label>
+                                    <input type="email" class="form-element" maxlength="80" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Requires at least 2 characters, @, and then a '.'" name="email" required="required" placeholder="john@legend.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Your Message</label>
+                                    <input type="text" class="form-element" maxlength="350" pattern="([A-zÀ-ž\s]){2,350}" title="Required. 2 - 350 characters." name="message" required="required" placeholder="I'm listening...">
+                                    <small>If you have a lot to say, try contacting me directly at one of my links above.</small>
+                                </div>
+                                <p>Thanks for reaching out to me. I'll get back to you as soon as possible!</p>
+                                <div class="modal-footer">
+                                    <button type="submit" class="send">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>    
+    
+            <!-- END ABOUT -->
+            <hr>
+            <!-- START EDUCATION -->
+    
+            <section id="education" class="education-section">
+                <h2>Education</h2>
+                <p>Here's where I've studied.</p>
+                <div class="flex-block">
+                    <div class="icon-column">
+                        <img class="icon-image" src="images/GMU.png" alt="George Mason University icon">
+                    </div>
+                    <div class="text-column">
+                        <h3>George Mason University</h3>
+                        <div class="subheading">Bachelor of Science</div>
+                        <p>
+                            <b>Major: </b>
+                            Computer Science
+                            <br>
+                            <b>Organizations: </b>
+                            Game Analysis Design Interest Group, Vietnamese Student Association, GMU Esports
+                        </p>
+                        <button onclick="toggleCourse()" class="my-btn" id="show-course">
+                            Show Relevant Coursework
+                        </button>
+                        <div id="hidden-coursework">
+                            <div class="row">
+                                <div class="course-column">
+                                    <p>
+                                        <u>Computer Science:</u><br>
+                                        CS 110 - Essentials of Computer Science<br>
+                                        CS 112 - Intro to Computer Science<br>
+                                        CS 211 - Object-Oriented Programming<br>
+                                        CS 262 - Introduction to Low-Level Programming<br>
+                                        CS 310 - Data Structures<br>
+                                        CS 321 - Software Engineering<br>
+                                        CS 330 - Formal Methods & Models<br>
+                                        CS 367 - Computer Systems & Programming<br>
+                                        CS 450 - Database Concepts<br>
+                                        CS 471 - Operating Systems<br>
+                                        CS 482 - Computer Vision<br>
+                                        CS 483 - Analysis of Algorithms<br>
+                                        CS 484 - Data Mining
+                                    </p>
+                                </div>
+                                <div class="list-column">
+                                    <p>
+                                        <u>Math:</u><br>
+                                        MATH 113 - Calculus I<br>
+                                        MATH 114 - Calculus II<br>
+                                        MATH 125 - Discrete Mathematics<br>
+                                        MATH 203 - Linear Algebra<br>
+                                        MATH 213 - Calculus III<br>
+                                        MATH 446 - Numerical Analysis<br>
+                                        STAT 344 - Statistics for Engineers I<br>
+                                        STAT 354 - Statistics for Engineers II<br>
+                                    </p>
+                                    <p>
+                                        <u>Other:</u><br>
+                                        GAME 101 - Intro to Game Design<br>
+                                        ENGR 107 - Intro to Engineering<br>
+                                        PHYS 160 - University Physics I<br>
+                                        PHYS 260 - University Physics II<br>
+                                        OR 442 - Stochastics Operation Research<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="date-column text-right">
+                        Sept 2017 - May 2021
+                    </div>
+                </div>
+                <div class="flex-block">
+                    <div class="icon-column">
+                        <img class="icon-image" src="images/FCHS.png" alt="Falls Church High School">
+                    </div>
+                    <div class="text-column">
+                        <h3>Falls Church High School</h3>
+                        <div class="subheading">Advanced Studies Diploma</div>
+                        <p>
+                            <b>Relevant AP Courses: </b>
+                            Computer Science, Calculus BC, Physics 1, Statistics, Biology
+                        </p>
+                        <p>
+                            <b>Other AP Courses: </b>
+                            World History, Human Geography
+                        </p>
+                        <p>
+                            <b>Organizations: </b>
+                            National Junior Honor Society, Math Honor Society, Asian Student Association, Japan Club, Cross Country, Indoor Track, Tennis
+                        </p>
+                    </div>
+                    <div class="date-column text-right">
+                        Sept 2013 - Jun 2017
+                    </div>
+                </div>
+            </section>
+    
+            <!-- END EDUCATION -->
+            <hr>
+            <!-- START EXPERIENCE -->
+    
+            <section id="experience" class="experience-section">
+                <h2>EXPERIENCE</h2>
+                <p>Some places I've worked or volunteered at.</p>
+                <div class="flex-block">
+                    <div class="icon-column">
+                        <img class="icon-image" src="images/LLS.png" alt="Liberty Language Services icon">
+                    </div>
+                    <div class="text-column">
+                        <h3><a href="https://libertylanguageservices.com/" target="_blank">Liberty Language Services</a></h3>
+                        <div class="subheading">IT Technician [Mar 2022 - Present], IT Intern [Oct 2021 - Mar 2022]</div>
+                        <p>
+                            <ul>
+                                <li>Worked within Learning Management System (LMS) on Moodle and Mobile Device Management (MDM) systems on AirWatch to monitor user and device data</li>
+                                <li>Assisted with troubleshooting IT issues and provided IT solutions and technical support to staff and clients</li>
+                                <li>Created and updated documentation on technologies for staff, IT team, and userbase</li>
+                                <li>Participated in planning and implementation of multi-scale projects to automate and improve workflow through Podio and GlobiFlow (rebranded to Citrix Podio Workflow Automation)</li>
+                                <li>Practiced Agile software development techniques with daily stand-ups, continuous cross-team communication, and iterative deliverables for flexible deployment</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="date-column text-right">
+                        Oct 2021 - Present
+                    </div>
+                </div>
+                <div class="flex-block" id="gadig">
+                    <div class="icon-column">
+                        <img class="icon-image" src="images/GADIG.png" alt="GADIG icon">
+                    </div>
+                    <div class="text-column">
+                        <h3><a href="https://orgs.gmu.edu/gadig/" target="_blank">Game Analysis Design Interest Group</a></h3>
+                        <div class="subheading">Volunteer Programmer</div>
+                        <p>
+                            <ul>
+                                <li>Collaborated with 40 to 50 student developers on multiple single–user, cross-platform, locally hosted programming projects of varying degrees of complexity to develop logic flows, subroutines, key–mapping, and user–interface layouts that enhanced application flow, improve user experience, optimize code, and ensure successful integration of respective code contributions into the projects</li>
+                                <li>Exercised Agile software development techniques in a large group setting to improve developer independence, coordinate development responsibilities, and enabled near continuous update. Managed with Product Owner to demonstrate application releases and provided a final deliverable as a free download for Windows, Mac OS, and Linux on the organization’s <a href="https://gadig.itch.io/">itch.io domain</a></li>
+                                <li>Utilized Git Bash to share contributions with the development team to maintain configuration and version control</li>
+                                <li>Implemented assets shared by other media teams in Unity with C# in Visual Studio Code</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="date-column">
+                        Sept 2020 - Jan 2022
+                    </div>
+                </div>
+                <button onclick="toggleWork()" class="my-btn" id="show-work">
+                    Show More
+                </button>
+                <div id="hidden-work">
+                    <div class="flex-block">
+                        <div class="icon-column">
+                            <img class="icon-image" src="images/SpiderSmart.png" alt="SpiderSmart Learning icon">
+                        </div>
+                        <div class="text-column">
+                            <h3><a href="https://www.spidersmart.com/" target="_blank">SpiderSmart Learning</a></h3>
+                            <div class="subheading">K-12 Tutor</div>
+                            <p>
+                                <ul>
+                                    <li>Coached Pre-K to 12 students in group settings and 1:1 sessions and tailored educational resources according to individual’s needs and simplified complex topics for students to better digest concepts to promote and strengthen their mathematics and critical thinking skills</li>
+                                    <li>Based on conceptual diagnostic assessments before and after tutoring, average performance increased in most students by ~12%</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="date-column">
+                            Sept 2021 - Oct 2021
+                        </div>
+                    </div>
+                    <div class="flex-block">
+                        <div class="icon-column">
+                            <img class="icon-image" src="images/EyeLevel.png" alt="Eye Level Learning icon"
+                            >
+                        </div>
+                        <div class="text-column">
+                            <h3><a href="https://www.myeyelevel.com/US/eye-level/introduction.do" target="_blank">Eye Level Learning</a></h3>
+                            <div class="subheading">K-12 Mathematics Tutor</div>
+                            <p>
+                               <ul>
+                                   <li>Mentored K–12 students to improve their mathematic skills and to develop proactive approach to problem solving</li>
+                                   <li>Based on regular parental feedback, tutoring improved average quarterly academic performance in most students by ~15% (one letter grade)</li>
+                                   <li> Served as a positive role model and mentor for all students, encouraged each student to appreciate the benefits of mathematics in almost every other discipline</li>
+                               </ul> 
+                            </p>
+                        </div>
+                        <div class="date-column text-right">
+                            July 2019 - Jan 2021
+                        </div>
+                    </div>
+                    <div class="flex-block">
+                        <div class="icon-column">
+                            <img class="icon-image" src="images/Jinya.png" alt="Jinya Ramen Bar icon">
+                        </div>
+                        <div class="text-column">
+                            <h3><a href="https://www.jinyaramenbar.com/" target="_blank">Jinya Ramen Bar</a></h3>
+                            <div class="subheading">Busboy [2016-2017], Line Cook [2017-2019]</div>
+                            <p>
+                                <ul>
+                                    <li>Offset educational costs by working in a fast-paced and dynamic work environment while a full-time high school and college student</li>
+                                    <li>After 6 months on the job, strong work ethic, proficiency, pleasant demeanor, and can-do attitude led to increased responsibility for training new Busboys and Line Cooks; successfully training ~20 new employees</li>
+                                    <li>Resolved complaints from guests accurately and answered guest inquiries effectively</li>
+                                    <li> Gained experience working with an ethically and economically diverse workforce; learned to appreciate and respect the unique perspective of each employee regardless of their background</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="date-column text-right">
+                            Aug 2016 - Jan 2019
+                        </div>
+                </div>
+                
+                </div>
+            </section>
+    
+            <!-- END EXPERIENCE -->
+            <hr>
+            <!-- START PROJECTS -->
+    
+            <section id="projects" class="projects-section">
+                <h2>PROJECTS</h2>
+                <p>Here's what I've built, worked on, or contributed to.</p>
+
+                <div class="projects-grid">
+                    <div class="projects-tile">
+                        <img class="tile-image" src="images/gabe-newell.PNG" alt="Gabe Newell tribute page">
+                        <div class="tile-body">
+                            <h3>Tribute Page - CodePen</h3>
+                            <ul>
+                                <li>Practiced with HTML and plain CSS elements, layouts and properties</li>
+                                <li>Second project of freeCodeCamp's <a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank">Responsive Web Design Certification course</a></li>
+                            </ul>
+                            <a href="https://codepen.io/anguyense/full/yLoKeEY" target="_blank" class="project-btn">View Project</a>
+                            <ul class="tile-skills">
+                                <li>Skills:</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Accessible</li>
+                                <li>Visual Design</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="projects-tile">
+                        <img class="tile-image" src="images/survey-form.PNG" alt="Survey form project">
+                        <div class="tile-body">
+                            <h3>Survey Form - CodePen</h3>
+                            <ul>
+                                <li>Practiced with HTML form elements and plain CSS properties</li>
+                                <li>First project of freeCodeCamp's <a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank">Responsive Web Design Certification course</a></li>
+                            </ul>
+                            <a href="https://codepen.io/anguyense/full/bGrMpPe" target="_blank" class="project-btn">View Project</a>
+                            <ul class="tile-skills">
+                                <li>Skills:</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Visual Design</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="projects-tile">
+                        <img class="tile-image" src="images/morgs-mimics.png" alt="Morg's Mimics puzzle game project">
+                        <div class="tile-body">
+                            <h3>Morg's Mimics & the Mansion Munchables - Puzzle Game</h3>
+                            <ul>
+                                <li>Strategy puzzle game developed in Unity with C# under <a href="#gadig">GADIG</a></li>
+                                <li>Developed camera system, scene manager, and UI with object-oriented programming</li>
+                                <li>Practiced version control with Git and debugging in VS Code</li>
+                            </ul>
+                            <a href="https://gadig.itch.io/morgs-mimics" target="_blank" class="project-btn">View Project</a>
+                            <ul class="tile-skills">
+                                <li>Skills:</li>
+                                <li>C#</li>
+                                <li>Git</li>
+                                <li>Unity</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="projects-tile">
+                        <img class="tile-image" src="images/more.png" alt="Survey form project">
+                        <div class="tile-body">
+                            <h3>More to come!</h3>
+                            <a href="#projects" class="project-btn">Come back later!</a>
+                            <ul class="tile-skills">
+                                <li>Skills:</li>
+                                <li>Learning and building!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+    
+            <!-- END PROJECTS -->
+            <hr>
+            <!-- START SKILLS-->
+            
+            <section id="skills" class="skills-section">
+                <h2>SKILLS</h2>
+                <p>Some things I've learned.</p>
+                <div class="row">
+                    <div class="skill-column">
+                        <div class="skills-heading">Programming Languages</div>
+                        <div class="skills-ul-list">
+                            <ul>
+                                <li>Java</li>
+                                <li>C</li>
+                                <li>C#</li>
+                                <li>Python*</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                        <div class="skills-heading">Code Editors</div>
+                        <div class="skills-ul-list">
+                            <ul>
+                                <li>Visual Studio Code</li>
+                                <li>Vim</li>
+                                <li>Notepad++</li>
+                                <li>Eclipse</li>
+                            </ul>
+                        </div>
+                        <div class="skills-heading">Markup Languages</div>
+                        <div class="skills-ul-list">
+                            <ul>
+                                <li>HTML*</li>
+                                <li>LaTeX</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skill-column">
+                        <div class="skills-heading">Programming Industry Knowledge</div>
+                        <div class="skills-ul-list">
+                            <ul>
+                                <li>Object Oriented Programming</li>
+                                <li>Data Structures</li>
+                                <li>Algorithms</li>
+                                <li>Software Development</li>
+                                <li>Agile Methology</li>
+                                <li>Data Mining*</li>
+                                <li>Database Concepts*</li>
+                                <li>Web Development*</li>
+                            </ul>
+                        </div>
+                        <div class="skills-heading">Version Control System</div>
+                        <div class="skills-ul-list">
+                            <ul>
+                                <li>Git</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    ! - certified by course<br>
+                    ? - certified by LinkedIn<br>
+                    * - currently learning
+                </p>
+            </section>
+            
+            <!-- END SKILLS-->
+        </div>
+        
+        <!-- JAVASCRIPTS -->
+        <script src="js/show-course.js" defer></script>
+        <script src="js/show-work.js" defer></script>
+        <script src="js/modal.js" defer></script>
+
+    </body>
+</html>

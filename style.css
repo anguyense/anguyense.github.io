@@ -1,0 +1,331 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: gray;
+}
+
+h1 {
+    color: lightblue;
+}
+
+p {
+    color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+.my-btn {
+  background-color: #333;
+  border: none;
+  color: lightblue;
+  padding: 4px 64px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  width: 80%;
+}
+
+.my-btn:hover {
+  color: lightskyblue;
+}
+
+/* Side navbar */
+#sidenav {
+  overflow: hidden; /* Disable horizontal scroll */
+  background-color: black;
+  position: fixed; /* Set the navbar to fixed position */
+  z-index: 1; /* Stay on top */
+  width: 200px; /* Width of sidebar */
+  height: 100%; /* Full height of bar */
+  left: 0px; /* Stay at the left side */
+  top: 0px; /* Position the navbar at the top of the page */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Links inside the navbar */
+#sidenav a {
+  float: left;
+  color: lightblue;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+}
+
+/* Change background on mouse-over */
+#sidenav a:hover {
+  color: lightskyblue;
+}
+
+#sidenav ul {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  display: inline-block;
+  list-style-type: none;
+}
+
+.main {
+  margin-left: 220px; /* Same width as sidebar */
+  padding: 0px 5px;
+}
+
+.image-profile {
+  max-width: 6.5rem;
+  max-height: 6.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0.15rem;
+  border: 5px solid lightblue;
+  min-width: 75%;
+  object-fit: cover;
+}
+
+.image-fluid, .icon-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.flex-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  max-width: 80em;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+.icon-column {
+  flex: 0 0 8%;
+  max-width: 69px;
+  margin-right: 0.5rem;
+}
+
+.text-column {
+  flex-grow: 1;
+}
+
+.date-column {
+  flex-shrink: 0;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.about-section {
+  margin-top: 5rem;
+}
+
+#hidden-coursework, #hidden-work {
+  display: none;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 60rem;
+}
+
+.course-column {
+  position: relative;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.skill-column {
+  flex-basis: 0;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.skills-ul-list ul{
+  list-style-type: none;
+  margin-left: 2rem;
+  padding-left: 0;
+  margin-bottom: 0;
+  padding-bottom: 15px;
+}
+
+.tile-image {
+  height: calc(100% - 6.8rem);
+  max-height: 284px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: calc(0.75rem - 1px);
+  border-top-right-radius: calc(0.75rem - 1px);
+} 
+
+.projects-grid {
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+.projects-tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: lightblue;
+  background-clip: border-box;
+  border: 1px transparent white;
+  border-radius: calc(0.75rem - 1px);
+}
+
+.project-btn {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 1.15rem;
+  width: 80%;
+  margin: auto;
+}
+
+.tile-body {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.tile-body h3 {
+  text-align: center;
+}
+
+.tile-skills li{
+  display: inline-block;
+  font-size: 14px;
+  padding: 0px 3px;
+}
+
+.tile-skills li:first-child {
+  font-size: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #e2e2e2;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Header */
+.modal-header {
+  padding: 2px 16px;
+  background-color: #333;
+  color: white;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #333;
+  color: white;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.form-element {
+  display: block;
+  width: 100%;
+  height: 1rem;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem; 
+  line-height: 1.5;
+  color: black;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 0.25rem;
+}
+
+input[name="message"] {
+  overflow: auto;
+  resize: vertical;
+  height: auto;
+}
+
+.send {
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  background-color: lightblue;
+  color: #333;
+}
+
+.send:hover {
+  background-color: lightskyblue;
+}
