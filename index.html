@@ -17,38 +17,35 @@
         <link rel="manifest" href="images/site.webmanifest">
     </head>
     <body>
-        <!-- START DETAIL -->
         
         <div id="detail" class="detail-background"></div>
-        
-        <!-- END DETAIL-->
-        <!-- START NAV -->
        
         <nav id="sidenav" class="nav">
             <img class="image-profile image-fluid" src="images/AnhNguyen.jpeg" alt="Anh Nguyen profile picture">
-            <ul class="nav-list">
+            <ul id="nav-list">
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#education">EDUCATION</a></li>
                 <li><a href="#experience">EXPERIENCE</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#skills">SKILLS</a></li>
             </ul>
+            <button class="menu-icon" onclick="toggleNav()">
+                <i class="fa fa-bars"></i>
+            </button>
         </nav>
         
-        <!-- END NAV -->
-        <!-- START ABOUT -->
         <div class="main">
             <section id="about" class="about-section">
                 <h1>Hi, my name is Anh Nguyen.</h1>
                 <div class="contact-links">
-                    <a href="https://www.linkedin.com/in/anguyense/" class="fa fa-linkedin" target="_blank"> LinkedIn</a>
-                    <a href="https://www.facebook.com/PapaSh33p/" class="fa fa-facebook" target="_blank"> Facebook</a>
-                    <a href="https://github.com/anguyense" class="fa fa-github" target="_blank"> GitHub</a>
-                    <a href="mailto:anguyen.se@gmail.com" class="fa fa-at" > Email</a>
-                    <a href="tel:703-944-0629" class="fa fa-mobile"> Phone</a>
+                    <a href="https://www.linkedin.com/in/anguyense/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/anguyense" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="mailto:anguyen.se@gmail.com"><i class="fa fa-at"></i></a>
+                    <a href="tel:703-944-0629"><i class="fa fa-mobile"></i></a>
                 </div>
+                <!-- TODO: Insert carousel for personal interests -->
                 <h2>About Me</h2>
-                <p>I am a software developer living in Fairfax, Virginia. I want to <strong>make people smile with code</strong>.<br> Although I can be professional, I want to be personable too. Besides coding, I have a bunch of other hobbies. I like pop music. I love spicy food. I like to watch movies and shows. I play video games. I like to go out on adventures.</p>
+                <p>I am a software developer living in Fairfax, Virginia. I want to <strong>make people smile with code</strong>.<br> Although I can be professional, I am personable too. Besides coding, I have a bunch of other hobbies. I like pop music. I love spicy food. I like to watch movies and shows. I play video games. I like to go out on adventures.</p>
     
                 <h2>People First</h2>
                 <p>I can use most software easily, but everybody is different. Some have disabilities that make using software more difficult. Others may struggle due to unintentional oversight or confusing and frustrating design. Everyone should be able to enjoy software as easily as possible.<br>With that in mind, I strive to <strong>make software accessible and inclusive to everyone</strong>.</p>
@@ -93,9 +90,7 @@
                 </div>
             </section>    
     
-            <!-- END ABOUT -->
             <hr>
-            <!-- START EDUCATION -->
     
             <section id="education" class="education-section">
                 <h2>Education</h2>
@@ -110,7 +105,8 @@
                         <p>
                             <b>Major: </b>
                             Computer Science
-                            <br>
+                        </p>
+                        <p>
                             <b>Organizations: </b>
                             Game Analysis Design Interest Group, Vietnamese Student Association, GMU Esports
                         </p>
@@ -192,9 +188,7 @@
                 </div>
             </section>
     
-            <!-- END EDUCATION -->
             <hr>
-            <!-- START EXPERIENCE -->
     
             <section id="experience" class="experience-section">
                 <h2>EXPERIENCE</h2>
@@ -306,50 +300,13 @@
                 </div>
             </section>
     
-            <!-- END EXPERIENCE -->
             <hr>
-            <!-- START PROJECTS -->
     
             <section id="projects" class="projects-section">
                 <h2>PROJECTS</h2>
                 <p>Here's what I've built, worked on, or contributed to.</p>
 
                 <div class="projects-grid">
-                    <div class="projects-tile">
-                        <img class="tile-image" src="images/gabe-newell.PNG" alt="Gabe Newell tribute page">
-                        <div class="tile-body">
-                            <h3>Tribute Page - CodePen</h3>
-                            <ul>
-                                <li>Practiced with HTML and plain CSS elements, layouts and properties</li>
-                                <li>Second project of freeCodeCamp's <a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank">Responsive Web Design Certification course</a></li>
-                            </ul>
-                            <a href="https://codepen.io/anguyense/full/yLoKeEY" target="_blank" class="project-btn">View Project</a>
-                            <ul class="tile-skills">
-                                <li>Skills:</li>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Accessible</li>
-                                <li>Visual Design</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="projects-tile">
-                        <img class="tile-image" src="images/survey-form.PNG" alt="Survey form project">
-                        <div class="tile-body">
-                            <h3>Survey Form - CodePen</h3>
-                            <ul>
-                                <li>Practiced with HTML form elements and plain CSS properties</li>
-                                <li>First project of freeCodeCamp's <a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank">Responsive Web Design Certification course</a></li>
-                            </ul>
-                            <a href="https://codepen.io/anguyense/full/bGrMpPe" target="_blank" class="project-btn">View Project</a>
-                            <ul class="tile-skills">
-                                <li>Skills:</li>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Visual Design</li>
-                            </ul>
-                        </div>
-                    </div>
                     <div class="projects-tile">
                         <img class="tile-image" src="images/morgs-mimics.png" alt="Morg's Mimics puzzle game project">
                         <div class="tile-body">
@@ -369,23 +326,45 @@
                         </div>
                     </div>
                     <div class="projects-tile">
-                        <img class="tile-image" src="images/more.png" alt="Survey form project">
+                        <img class="tile-image" src="images/gabe-newell.PNG" alt="Gabe Newell tribute page">
                         <div class="tile-body">
-                            <h3>More to come!</h3>
-                            <a href="#projects" class="project-btn">Come back later!</a>
+                            <h3>Tribute Page - CodePen</h3>
+                            <ul>
+                                <li>Practiced with HTML and plain CSS elements, layouts and properties</li>
+                                <li>Second project of freeCodeCamp's legacy <a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank">Responsive Web Design Certification course</a></li>
+                            </ul>
+                            <a href="https://codepen.io/anguyense/full/yLoKeEY" target="_blank" class="project-btn">View Project</a>
                             <ul class="tile-skills">
                                 <li>Skills:</li>
-                                <li>Learning and building!</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Accessible</li>
+                                <li>Visual Design</li>
                             </ul>
                         </div>
                     </div>
+                    <div class="projects-tile">
+                        <img class="tile-image" src="images/survey-form.PNG" alt="Survey form project">
+                        <div class="tile-body">
+                            <h3>Survey Form - CodePen</h3>
+                            <ul>
+                                <li>Practiced with HTML form elements and plain CSS properties</li>
+                                <li>First project of freeCodeCamp's legacy <a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank">Responsive Web Design Certification course</a></li>
+                            </ul>
+                            <a href="https://codepen.io/anguyense/full/bGrMpPe" target="_blank" class="project-btn">View Project</a>
+                            <ul class="tile-skills">
+                                <li>Skills:</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Visual Design</li>
+                            </ul>
+                        </div>
+                    </div> 
                 </div>
 
             </section>
     
-            <!-- END PROJECTS -->
             <hr>
-            <!-- START SKILLS-->
             
             <section id="skills" class="skills-section">
                 <h2>SKILLS</h2>
@@ -427,7 +406,7 @@
                                 <li>Data Structures</li>
                                 <li>Algorithms</li>
                                 <li>Software Development</li>
-                                <li>Agile Methology</li>
+                                <li>Agile Methodology</li>
                                 <li>Data Mining*</li>
                                 <li>Database Concepts*</li>
                                 <li>Web Development*</li>
@@ -448,13 +427,11 @@
                 </p>
             </section>
             
-            <!-- END SKILLS-->
         </div>
         
-        <!-- JAVASCRIPTS -->
         <script src="js/show-course.js" defer></script>
         <script src="js/show-work.js" defer></script>
         <script src="js/modal.js" defer></script>
-
+        <script src="js/show-nav.js" defer></script>
     </body>
 </html>
