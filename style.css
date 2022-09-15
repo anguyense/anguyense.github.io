@@ -44,6 +44,8 @@ a:hover {
 
 /* Side navbar */
 #sidenav {
+  display: flex;
+  flex-direction: column;
   overflow: hidden; /* Disable horizontal scroll */
   background-color: black;
   position: fixed; /* Set the navbar to fixed position */
@@ -52,8 +54,6 @@ a:hover {
   height: 100%; /* Full height of bar */
   left: 0px; /* Stay at the left side */
   top: 0px; /* Position the navbar at the top of the page */
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -72,19 +72,24 @@ a:hover {
 /* Change background on mouse-over */
 #sidenav a:hover {
   color: lightskyblue;
+  background: gray;
 }
 
 #sidenav ul {
   margin: 0px;
   padding: 0px;
   text-align: center;
-  display: inline-block;
+  display: block;
   list-style-type: none;
 }
 
 .main {
   margin-left: 220px; /* Same width as sidebar */
   padding: 0px 5px;
+}
+
+.menu-icon {
+  display: none;
 }
 
 .image-profile {
@@ -97,6 +102,40 @@ a:hover {
   min-width: 75%;
   object-fit: cover;
 }
+
+@media screen and (max-width: 992px) {
+  #sidenav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0.5rem 1rem;
+    right: 0;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+  }
+  #sidenav li {
+    display: inline;
+  }
+  #sidenav #nav-list {
+    display: none;
+  }
+  .main {
+    margin-left: 1rem;
+    margin-top: 100px;
+  }
+  .image-profile {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    right: 0;
+    top: 0;
+    background: gray;
+    
+  }
+}
+
+
 
 .image-fluid, .icon-image {
   max-width: 100%;
