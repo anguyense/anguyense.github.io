@@ -83,6 +83,12 @@ a:hover {
   list-style-type: none;
 }
 
+.nav-name {
+  color: lightblue;
+  font-size: 18px;
+  font-weight: 800;
+}
+
 .main {
   margin-left: 220px; /* Same width as sidebar */
   padding: 0px 5px;
@@ -130,8 +136,10 @@ a:hover {
     display: block;
     right: 0;
     top: 0;
-    background: gray;
+    height: 1.5rem;
     
+    background: gray;
+    margin-right: 20%;
   }
 }
 
